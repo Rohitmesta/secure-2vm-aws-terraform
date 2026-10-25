@@ -2,6 +2,22 @@
 
 This project reproduces the assignment's security design in AWS because Azure subscription access was unavailable and the team lead approved AWS as an alternative. Record this platform substitution honestly in the walkthrough.
 
+## Project Status
+
+**Status:** Completed and tested.
+
+- Provisioned the AWS network and two virtual machines using Terraform.
+- Verified RDP access to the Windows jump host.
+- Verified SSH access from Windows to the private Linux host.
+- Confirmed that direct access to the private host from the laptop was blocked.
+- Ran `terraform destroy` and verified that the project resources were terminated or deleted.
+
+**Platform note:** This project implements the assignment's network security design in AWS because Azure subscription access was unavailable. The AWS substitution was approved by the team lead.
+
+## Evidence
+
+Screenshots documenting infrastructure provisioning, security group rules, connectivity tests, and cleanup are available in the [`screenshots/`](screenshots/) directory.
+
 ## Design
 
 - One dedicated VPC: `10.20.0.0/16`
